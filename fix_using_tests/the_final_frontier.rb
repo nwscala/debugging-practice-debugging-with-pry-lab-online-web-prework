@@ -13,8 +13,8 @@ def crew
 end
 
 def greet_crew (crew)
-  crew.each {|crew_member| "Hello #{crew_member}."}
-  binding.pry
+  greeted_crew = crew.map {|crew_member| "Hello #{crew_member}."}
+  greeted_crew
 end
 
 def engage
